@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/a13b999530.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/static/css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/static/css/nev_bar_style.css" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internships</title>
+    <link rel="icon" href= 
+    "https://developers.google.com/static/identity/images/branding_guideline_sample_lt_rd_sl.svg" 
+              type="image/x-icon"> 
+    <style></style>
+  </head>
+  <body>
+  
+
+    <header>
+      <a class="logo" href="index.ejs">
+        InternBrand.
+      </a>
+      <nav>
+        <ul class="nav_links">
+          <li>
+            <a href="internships.ejs">Browse Listings</a>
+          </li>
+          <li>
+            <a href="#">Application status </a>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="students_log.ejs" id="cta">
+        <button class="headingbutton">Login</button></a
+      >
+
+      <a href="students_reg.ejs" id="cta1">
+        <button class="headingbutton" id="register">Register</button></a
+      >
+    </header>
+
+   
+
+    <div id="internship_heading">
+      <h4 style="text-align: left">Total Internships</h4>
+    </div>
+
+    <div id="max-width-container">
+      <div id="reference">
+        <div id="search_criteria_container">
+          <div id="filters">
+            <div id="form_container">
+              <div id="filter_logo">
+                <i class="fas fa-filter"></i>
+                <span>Filters</span>
+              </div>
+
+              <form id="search_form">
+               
+                <div class="category_container">
+                  <label for="select_category">Category</label>
+                  <div id="category_options">
+                    <select
+                      id="select_category"
+                      name="select_category"
+                      data-placeholder="e.g Marketing"
+                      class="form_control"
+                    >
+                      <% domains.forEach((el)=>{ %>
+                      <option value="<%= el.domain.substring(0,20) %>">
+                        <%= el.domain.substr(0,20) %>
+                      </option>
+                      <% }) %>
+                    </select>
+                  </div>
+                </div>
+
+             
+
+                <div class="category_container">
+                  <label for="select_city">City</label>
+                  <div id="city_options">
+                    <select
+                      id="select_city"
+                      name="select_city"
+                      data-placeholder="e.g Mumbai"
+                      class="form_control"
+                    >
+                      <% locations.forEach((el)=>{ %>
+                      <option value="<%= el.city %>"><%= el.city %></option>
+                      <% }) %>
+                    </select>
+                  </div>
+                </div>
+
+       
+
+                <div class="filters_checkboxes">
+                  <div class="flex_row">
+                    <label for="work_from_home">Work from home</label>
+                    <div class="switch_container">
+                     
+                      <label class="switch">
+                        <input type="checkbox" id="wfh_check" />
+                        <span class="slider round"></span>
+                      </label>
+                    </div>
+
+                  
+                  </div>
+                  <div class="flex_row">
+                    <label for="part_time">Part time</label>
+                    <div class="switch_container">
+                    
+                      <label class="switch">
+                        <input type="checkbox" id="pt_check" />
+                        <span class="slider round"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div id="list_container">
+          <div id="for_dom"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="emptydiv"></div>
+  </body>
+</html>
+<script src="/static/js/body.js"></script>

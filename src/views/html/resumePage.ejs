@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+    <head>
+        <html lang="en">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/static/css/resumePage.css" />
+        <link rel="stylesheet" href="/static/css/nev_bar_style.css" /> 
+        <link rel="stylesheet" href="/static/css/main.css" />
+         <link rel="stylesheet" href="/static/css/pop.css" />
+        <script src="https://kit.fontawesome.com/996973c893.js"></script>
+
+        <title>Student Resume</title>
+        <link rel="icon" href= 
+    "https://developers.google.com/static/identity/images/branding_guideline_sample_lt_rd_sl.svg" 
+              type="image/x-icon"> 
+    </head>
+    <body>
+        
+        <header>
+            <a class="logo" href="index.ejs">
+              InternBrand.
+            </a>
+            <nav>
+              <ul class="nav_links">
+                <li>
+                  <a href="internships.ejs">Browse Listings</a>
+                </li>
+                <li>
+                  <a href="#">Application status </a>
+                </li>
+                <li>
+                  <a href="#">Contact Us</a>
+                </li>
+              </ul>
+            </nav>
+            <a href="students_log.ejs" id="cta">
+              <button class="headingbutton">Login</button></a
+            >
+      
+            <a href="students_reg.ejs" id="cta1">
+              <button class="headingbutton" id="register">Register</button></a
+            >
+          </header>
+        
+        <div class="body1">
+        <div class="box">
+            <div class="header">
+                <div class="header-left">
+                    <div class="name">
+                        <h1 id="firstNameR" class="first-name">ABC</h1>
+                        <h1 id ="lastNameR" class="last-name">Malik</h1>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="email">
+                        <p id="emailResume">abc@xyz.com</p>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="linkedin">
+                        <p id="linkedinResume">linkedin.com/in/abckumar/</p>
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div class="github">
+                        <p id="gitHubResume">github.com/xyz</p>
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="phone">
+                        <p>+91999999999</p>
+                        <i class="fas fa-phone"></i>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="objective">
+                <div class="obj-heading grey">
+                    <i class="fas fa-bullseye icon"></i>
+                    <h2>Objectve</h2>
+                </div>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta rem,
+                    sit ex accusamus quisquam incidunt tempora, alias recusandae error
+                    perspiciatis a nihil quibusdam ea, tenetur harum. Earum doloribus
+                    quisquam repellendus!
+                </p>
+            </div>
+            <hr />
+            <div class="education">
+                <div class="ed-heading grey">
+                    <i class="fas fa-school icon"></i>
+                    <h2>Education</h2>
+                </div>
+    
+                <table>
+                    <tr>
+                        <th>Board</th>
+                        <th>Institution</th>
+                        <th>Year of passing</th>
+                        <th>Percentage/GPA</th>
+                    </tr>
+                    <tr>
+                        <td>ABC</td>
+                        <td>XYZ</td>
+                        <td>2021</td>
+                        <td>95%</td>
+                    </tr>
+                    <tr>
+                        <td>GHI</td>
+                        <td>XYZ</td>
+                        <td>2019</td>
+                        <td>95%</td>
+                    </tr>
+                    <tr>
+                        <td>abch</td>
+                        <td>XYZ</td>
+                        <td>2017</td>
+                        <td>95%</td>
+                    </tr>
+                </table>
+            </div>
+            <hr />
+            <div class="skills">
+                <div class="skills-heading grey">
+                    <i class="fas fa-tools icon"></i>
+                    <h2>Skills</h2>
+                </div>
+    
+                <ul>
+                    <li class="tag" >HTML</li>
+                    <li class="tag">CSS</li>
+                    <li class="tag">Javascript</li>
+                    <li class="tag">jQuery</li>
+                    <li class="tag">MySQL</li>
+                </ul>
+            </div>
+            <hr />
+            <div class="activities">
+                <div class="act-heading grey">
+                    <i class="fab fa-creative-commons-nd icon"></i>
+                    <h2>Activities</h2>
+                </div>
+    
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                    reprehenderit libero eum maiores quidem assumenda laboriosam fugit!
+                    Fuga molestias similique perspiciatis expedita minima dolorem mollitia
+                    repellat ipsum, minus laudantium esse voluptatibus. Maiores sequi,
+                    officia eum obcaecati in atque unde suscipit consequuntur nihil, sed
+                    aliquid! Sed et nam aut dolorem fugit.
+                </p>
+            </div>
+            <hr />
+            <div class="buttons_container">
+                <a href="#" >
+                    <button class="btn" id="applynow">
+                        Apply now </button>
+                </a>
+            </div>
+        </div>
+    </div>
+  
+   
+
+
+    <div class="popup">
+      <div class="close-btn">&times;</div>
+      <div class="form">
+        <h2 style="color: #6938EF;">Successfully applied !</h2>
+        <div class="form-element"> 
+        </div>
+        <div class="form-element">
+          <button id="home_page">Go to Homepage</button>
+        </div>
+      </div>
+    </div>
+
+    </body>
+    
+    </html>
+
+   <script src="/static/js/resumePage.js"></script>
